@@ -1,0 +1,39 @@
+@model Student
+
+    <form method="post" asp-action="DeletePOST">
+        <input asp-for="Id" hidden/>
+    <h1>Delete Student</h1>
+    <div> <label asp for="Name">Номер:</label>
+        <input type="Id" name="Id"  value="@Model.Id"  disabled />
+    </div>
+    <div> <label asp for="Name">Имя:</label>
+        <input type="text" name="Name"  value="@Model.Name"  disabled />
+    </div>
+    <div> <label asp for="Name">Фамилия:</label>
+        <input type="text"  name="LastName" value="@Model.LastName"  disabled/>
+    </div>
+    <div> <label asp for="Name">Отчество:</label>
+        <input type="text" name="Patronymic" value="@Model.Patronymic"  disabled />
+    </div>
+    <div> <label asp for="Name">Дата рождения:</label>
+        <input type="text" name="Birthaday" value="@Model.Birthaday"  disabled/>
+    </div>
+    <div> <label asp for="Name">Курс:</label>
+        <input type="text" name="Course" value="@Model.Course"  disabled/>
+    </div>
+    <div> <label asp for="Name">Национальность:</label>
+        <input type="text" name="Nationality" value="@Model.Nationality"  disabled/>
+    </div>
+    <div> <label asp for="Name">Телефон:</label>
+        <input type="text" name="Contact" value="@Model.Contact"  disabled />
+    </div>
+    <div> <label asp for="Name">Город:</label>
+        <input type="text"  name="City" value="@Model.City"  disabled/>
+    </div>
+    <div> <label asp for="Name">Адрес:</label>
+        <input type="text" name="Addres" value="@Model.Addres"  disabled/>
+    </div>
+    
+    <button type ="submit" >Delete</button>
+    <a asp-controller="Home" asp-action="Student" > Back to list</a>
+</form>

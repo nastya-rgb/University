@@ -1,0 +1,38 @@
+@model Student
+
+    <form method="post" asp-action="Edit">
+    <h1>Edit Student</h1>
+    <div> <label asp for="Name">Номер:</label>
+        <input type="Id" name="Id"  value="@Model.Id"  disabled />
+    </div>
+    <div> <label asp-for="Name">Имя: </label>
+        <input type="text" name="Name" placeholder="Имя" required value="@Model.Name" />
+    </div>
+    <div> <label asp for="Name">Фамилия:</label>
+        <input type="text"  name="LastName" value="@Model.LastName"  required/>
+    </div>
+    <div> <label asp for="Name">Отчество:</label>
+        <input type="text" name="Patronymic" value="@Model.Patronymic" required />
+    </div>
+    <div> <label asp for="Name">Дата рождения:</label>
+        <input type="text" name="Birthaday" value="@Model.Birthaday" required/>
+    </div>
+    <div> <label asp for="Name">Курс:</label>
+        <input type="text" name="Course" value="@Model.Course" required/>
+    </div>
+    <div> <label asp for="Name">Национальность:</label>
+        <input type="text" name="Nationality" value="@Model.Nationality" required/>
+    </div>
+    <div> <label asp for="Name">Телефон:</label>
+        <input type="text" name="Contact" value="@Model.Contact" required />
+    </div>
+    <div> <label asp for="Name">Город:</label>
+        <input type="text"  name="City" value="@Model.City" required/>
+    </div>
+    <div> <label asp for="Name">Адрес:</label>
+        <input type="text" name="Addres" value="@Model.Addres" required/>
+    </div>
+    
+    <button type ="submit" >Update</button>
+    <a asp-controller="Home" asp-action="Student" > Back to list</a>
+</form>

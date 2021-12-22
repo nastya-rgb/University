@@ -1,0 +1,34 @@
+@model IEnumerable<Student>
+<form method="post">
+    <h1>Add New Student</h1>
+    <div> <label asp for="Name">Имя:</label>
+        <input type="text" name="Name" placeholder="Имя" required />
+    </div>
+    <div> <label asp for="Name">Фамилия:</label>
+        <input type="text"  name="LastName" required/>
+    </div>
+    <div> <label asp for="Name">Отчество:</label>
+        <input type="text" name="Patronymic" required />
+    </div>
+    <div> <label asp for="Name">Дата рождения:</label>
+        <input type="text" name="Birthaday" required/>
+    </div>
+    <div> <label asp for="Name">Курс:</label>
+        <input type="text" name="Course" required/>
+    </div>
+    <div> <label asp for="Name">Национальность:</label>
+        <input type="text" name="Nationality" required/>
+    </div>
+    <div> <label asp for="Name">Телефон:</label>
+        <input type="text" name="Contact" required />
+    </div>
+    <div> <label asp for="Name">Город:</label>
+        <input type="text"  name="City" required/>
+    </div>
+    <div> <label asp for="Name">Адрес:</label>
+        <input type="text" name="Addres" required/>
+    </div>
+    
+    <button type ="submit" >Create</button>
+    <a asp-controller="Home" asp-action="Student" > Back to list</a>
+</form>
